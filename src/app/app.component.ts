@@ -9,6 +9,7 @@ import { Model, TodoItem } from './model';
 export class AppComponent {
   model = new Model();
   isDisplay = false;
+
   getName() {
     return this.model.name;
   }

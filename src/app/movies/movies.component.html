@@ -1,1 +1,20 @@
-<p>movies works!</p>
+<app-movie-detail [detailSelectedMovie]="selectedMovie" />
+
+<div class="card">
+  <div class="card-header">
+    {{ title }}
+  </div>
+  <ul
+    *ngFor="let movie of movies; let i = index"
+    class="list-group list-group-flush"
+  >
+    <li
+      [class.bgColor]="movie.id === selectedMovie.id"
+      class="list-group-item"
+      (click)="setSelectedItem(movie)"
+    >
+      {{ movie.id + 1 }}-{{ movie.name }}
+      <span (click)="removeItem(i)" class="close">X</span>
+    </li>
+  </ul>
+</div>

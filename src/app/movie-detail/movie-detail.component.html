@@ -1,0 +1,7 @@
+<div class="card" *ngIf="detailSelectedMovie.id !== -1">
+  <div class="card-body">
+    id:{{ detailSelectedMovie.id }}- name:{{ detailSelectedMovie.name }}
+  </div>
+  <input type="text" #movieName value="{{ detailSelectedMovie.name }}" />
+  <button (click)="updateData(movieName.value)">Update</button>
+</div>

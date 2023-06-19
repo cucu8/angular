@@ -1,7 +1,7 @@
 <div
   class="d-flex flex-column h-100 vh-100 align-items-center justify-content-start p-5"
 >
-  <div class="container">
+  <!-- <div class="container">
     <div class="row justify-content-center">
       <span style="font-size: x-large">{{ getName() }} todo list</span>
       <div class="input-group gap-2">
@@ -48,7 +48,9 @@
         </tbody>
       </table>
     </div>
-  </div>
-  <h1 class="movies-header">Movies app</h1>
-  <app-movies></app-movies>
+  </div> -->
+  <app-navbar />
+  <h1>App Component</h1>
+  <router-outlet></router-outlet>
+  <app-logging></app-logging>
 </div>
